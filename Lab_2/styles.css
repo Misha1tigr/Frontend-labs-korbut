@@ -1,0 +1,51 @@
+.pyramid {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.cube {
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+#cube1 {
+    background-color: #57809b;
+    top: 10px;
+    left: 75px;
+    transform: rotate(45deg);
+}
+
+#cube2 {
+    background-color: #fff236;
+    top: 110px;
+    left: 10px;
+    transform: rotate(20deg);
+}
+
+#cube3 {
+    background-color: #a01a6d;
+    top: 110px;
+    left: 140px;
+    transform: rotate(-20deg);
+}
+
+#cube1_alt {
+    background-color: #57809b;
+    transform: translate(75px, 10px) rotate(45deg);
+}
+
+#cube2_alt {
+    background-color: #fff236;
+    transform: translate(10px, 110px) rotate(20deg);
+}
+
+#cube3_alt {
+    background-color: #a01a6d;
+    transform: translate(140px, 110px) rotate(-20deg);
+}

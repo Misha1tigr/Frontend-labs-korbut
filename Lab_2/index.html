@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сторінка з результатами лабораторної 2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корбут М.Я., ІО-23 Лаб2</title>
+    <style>
+        table {
+            text-decoration: none;
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+
+        table td {
+            white-space: pre-wrap;
+            padding: 12px 5px;
+            line-height: 13px;
+            vertical-align: middle;
+            border: 2px solid #3d3d3d;
+        }
+
+        table tr.top {
+            color: #FFFFFF;
+            background-color: #048f8f;
+        }
+
+        table tr.mid {
+            color: #2303FF;
+            background-color: #f5f504;
+        }
+
+        table tr.mid:hover {
+            color: #f5f504;
+            background-color: #2303FF
+        }
+
+        table tr.top:hover {
+            color: #048f8f;
+            background-color: #ffffff;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table style="width: 50%;">
+        <tbody>
+            <tr class="top">
+                <td>Корбут</td>
+                <td>Михайло</td>
+                <td colspan="2" rowspan="2">Ярославович</td>
+                <td colspan="2"></td>
+                <td colspan="2" rowspan="2">Варіант 4</td>
+            </tr>
+            <tr class="mid">
+                <td colspan="2">ІО-23</td>
+                <td colspan="2">Лабораторна 2</td>
+            </tr>
+            <tr class="bot">
+                <td colspan="2"></td>
+                <td colspan="6"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="pyramid" style="top: 20px;">
+        <div id="cube1" class="cube"></div>
+        <div id="cube2" class="cube"></div>
+        <div id="cube3" class="cube"></div>
+    </div>
+
+    <div class="pyramid">
+        <div id="cube1_alt" class="cube"></div>
+        <div id="cube2_alt" class="cube"></div>
+        <div id="cube3_alt" class="cube"></div>
+    </div>
+</body>
+
+</html>
