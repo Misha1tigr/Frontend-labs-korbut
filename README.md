@@ -3,4 +3,4 @@
 
 ## [Лабораторна 1](/Lab_1/index.html)
 ## [Лабораторна 2](/Lab_2/index.html)
-## [Лабораторна 3](/Lab_3/index.html)
+## Лабораторна 3 ([Float](/Lab_3/index.html))/([Flex](/Lab_3/flex.html))
