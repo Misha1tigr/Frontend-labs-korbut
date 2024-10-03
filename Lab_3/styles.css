@@ -1,0 +1,56 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    height:100%;
+    text-align: center;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+p {
+    font-size: 20pt;
+}
+
+#wrapper {
+    height: calc(100% - 40px);
+    padding: 20px;
+}
+
+#content {
+    height: 60%;
+}
+
+#main-text {
+    width: 70%;
+    height: 100%;
+    float: left;
+    background-color: aqua;
+}
+
+#image-block {
+    width: 30%;
+    height: 100%;
+    background-color: darkslategray;
+    float: left;
+    margin: 0;
+}
+
+#content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#bottom-img{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(64, 125, 238);
+}
+
+#bottom-text {
+    background-color: #fff67d;
+    height: 20%;
+    width: 100%;
+}
