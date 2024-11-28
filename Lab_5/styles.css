@@ -4,21 +4,21 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
 }
 
-.form-container {
+.form-container, .table-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
+    margin-bottom: 20px;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -29,18 +29,13 @@ label {
     font-weight: bold;
 }
 
-input {
+input:not(#colorPicker) {
     width: 100%;
     box-sizing: border-box;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-input.error {
-    border-color: red;
-    background-color: #ffe6e6;
 }
 
 button {
@@ -71,4 +66,29 @@ button:hover {
     background-color: #ffe6e6;
     border-color: red;
     color: red;
+}
+
+#tableWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #f0f0f0;
 }
