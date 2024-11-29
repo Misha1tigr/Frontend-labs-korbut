@@ -6,3 +6,4 @@
 ## Лабораторна 3 ([Float](/Lab_3/index.html))/([Flex](/Lab_3/flex.html))
 ## [Лабораторна 4](/Lab_4/index.html)
 ## [Лабораторна 5](/Lab_5/index.html)
+## [Лабораторна 6](/Lab_6/index.html)
