@@ -1,0 +1,18 @@
+.image-buttons {
+    margin-top: 10px;
+}
+
+.image-buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #87cefa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.image-buttons button:hover {
+    background-color: #4682b4;
+    color: white;
+}
