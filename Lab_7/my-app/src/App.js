@@ -4,6 +4,7 @@ import AuthorInfo from './AuthorInfo';
 import Hobbies from './Hobbies';
 import FavoriteBooks from './FavoriteBooks';
 import FavoriteCity from './FavoriteCity';
+import ProductGallery from './ProductGallery';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hobbies />
       <FavoriteBooks />
       <FavoriteCity />
+      <ProductGallery />
     </div>
   );
 }
