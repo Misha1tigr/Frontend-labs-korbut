@@ -4,22 +4,22 @@ import './FavoriteCity.css';
 const FavoriteCity = () => {
   const [images, setImages] = useState([{
     src: "https://vidviday.ua/blog/wp-content/uploads/2017/11/Kam.-Podilskyy-povitr.-kuli-03.jpg",
-    width: 300
+    width: '45%'
   }]);
 
   const addImage = () => {
-    setImages([...images, { src: images[0].src, width: 300 }]);
+    setImages([...images, { src: images[0].src, width: '100%' }]);
   };
 
   const increaseImage = () => {
     setImages(images.map((img, index) => 
-      index === images.length - 1 ? { ...img, width: img.width + 20 } : img
+      index === images.length - 1 ? { ...img, width: img.width === '100%' ? '100%' : parseInt(img.width) + 20 + 'px' } : img
     ));
   };
 
   const decreaseImage = () => {
     setImages(images.map((img, index) => 
-      index === images.length - 1 ? { ...img, width: img.width - 20 } : img
+      index === images.length - 1 ? { ...img, width: img.width === '100%' ? '100%' : parseInt(img.width) - 20 + 'px' } : img
     ));
   };
 

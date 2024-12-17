@@ -2,25 +2,26 @@ import React, { useState } from 'react';
 import './Hobbies.css';
 
 const Hobbies = () => {
-  const [activeHobby, setActiveHobby] = useState(null);
-
-  const handleHobbyClick = (index) => {
-    setActiveHobby(index);
-  };
+  const [firstActive, setFirstActive] = useState(false);
+  const [secondActive, setSecondActive] = useState(false);
 
   return (
     <div>
       <h3>Мої хобі:</h3>
       <ul id="hobbies">
-        {['Читання книг', '3д-друк', 'Програмування'].map((hobby, index) => (
-          <li
-            key={index}
-            className={activeHobby === index ? (index === 0 ? "active" : "active-2") : ""}
-            onClick={() => handleHobbyClick(index)}
-          >
-            {hobby}
-          </li>
-        ))}
+        <li
+          className={firstActive ? "active" : ""}
+          onClick={() => setFirstActive(!firstActive)}
+        >
+          Читання книг
+        </li>
+        <li
+          className={secondActive ? "active-2" : ""}
+          onClick={() => setSecondActive(!secondActive)}
+        >
+          3д-друк
+        </li>
+        <li>Програмування</li>
       </ul>
     </div>
   );
