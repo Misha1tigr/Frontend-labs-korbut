@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Frontend-labs-korbut/static/css/main.ad268629.css",
+    "main.js": "/Frontend-labs-korbut/static/js/main.00d8edf9.js",
+    "index.html": "/Frontend-labs-korbut/index.html",
+    "main.ad268629.css.map": "/Frontend-labs-korbut/static/css/main.ad268629.css.map",
+    "main.00d8edf9.js.map": "/Frontend-labs-korbut/static/js/main.00d8edf9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad268629.css",
+    "static/js/main.00d8edf9.js"
+  ]
+}
