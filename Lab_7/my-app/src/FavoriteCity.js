@@ -2,24 +2,29 @@ import React, { useState } from 'react';
 import './FavoriteCity.css';
 
 const FavoriteCity = () => {
+  // Calculate initial width as 40% of the viewport width
+  const initialWidth = window.innerWidth * 0.4;
+
   const [images, setImages] = useState([{
     src: "https://vidviday.ua/blog/wp-content/uploads/2017/11/Kam.-Podilskyy-povitr.-kuli-03.jpg",
-    width: '45%'
+    width: initialWidth
   }]);
 
   const addImage = () => {
-    setImages([...images, { src: images[0].src, width: '100%' }]);
+    // Clone the last image's width for the new image
+    const lastImage = images[images.length - 1];
+    setImages([...images, { src: lastImage.src, width: lastImage.width }]);
   };
 
   const increaseImage = () => {
     setImages(images.map((img, index) => 
-      index === images.length - 1 ? { ...img, width: img.width === '100%' ? '100%' : parseInt(img.width) + 20 + 'px' } : img
+      index === images.length - 1 ? { ...img, width: img.width + 20 } : img
     ));
   };
 
   const decreaseImage = () => {
     setImages(images.map((img, index) => 
-      index === images.length - 1 ? { ...img, width: img.width === '100%' ? '100%' : parseInt(img.width) - 20 + 'px' } : img
+      index === images.length - 1 ? { ...img, width: img.width - 20 } : img
     ));
   };
 
