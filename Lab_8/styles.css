@@ -287,7 +287,8 @@ header {
 }
 
 .icon img {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    width: 7cap;
 }
 
 .step h3 {
@@ -302,6 +303,7 @@ header {
 }
 
 .arrow img {
+    width: 70px;
     margin: 0 10px;
 }
 
