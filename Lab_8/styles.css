@@ -33,7 +33,7 @@ header {
 .logo a {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #1f6dff;
     text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ header {
     list-style: none;
     display: flex;
     gap: 20px;
-    align-items: center; /* Aligns dropdown with other items */
+    align-items: center;
 }
 
 .nav-links ul li a {
@@ -66,7 +66,6 @@ header {
     cursor: pointer;
     font-size: 16px;
     color: #333;
-    padding: 8px;
 }
 
 .dropdown-content {
@@ -132,14 +131,17 @@ header {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #fff;
+    color: #1f6dff;
     text-decoration: none;
-    border-radius: 5px;
+    border: solid;
+    border-radius: 30px;
+    border-width: 1px;
+    border-color: #afafaf;
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #5a52e0;
 }
 
 /* Main Section */
@@ -172,16 +174,14 @@ header {
 .get-started {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #6c63ff;
+    background-color: #1f6dff;
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    border-radius: 30px;
 }
 
 .get-started:hover {
-    background-color: #5a52e0;
+    background-color: #203ee9;
 }
 
 /* Image Content */
@@ -211,12 +211,12 @@ header {
 /* Quote Overlay */
 .quote-overlay {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: #f9f9f9; /* Match the template color */
-    color: #333;
+    bottom: -20px;
+    left: 10px;
+    background-color: #0e0a55;
+    color: #fff;
     padding: 20px;
-    border-radius: 0; /* Sharp corners */
+    border-radius: 0;
     max-width: 80%;
     text-align: left;
     font-style: italic;
@@ -269,13 +269,21 @@ header {
 
 .performance-item h3 {
     font-size: 36px;
-    color: #000; /* Change to black */
+    color: #000;
     margin-bottom: 5px;
 }
 
 .performance-item p {
     font-size: 16px;
     color: #333;
+}
+
+.performance-item p:nth-child(2) {
+    font-weight: bold;
+}
+
+.performance-item p:nth-child(3) {
+    color: #666;
 }
 
 /* How It Works Section */
@@ -286,7 +294,13 @@ header {
     width: 100%;
 }
 
-.how-it-works h2 {
+.how-it-works .section-subtitle {
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.how-it-works .section-title {
     font-size: 28px;
     margin-bottom: 40px;
     color: #333;
@@ -334,6 +348,10 @@ header {
         text-align: center;
     }
 
+    .button {
+        margin-top: 10px;
+    }
+
     .nav-links ul {
         flex-direction: column;
     }
@@ -343,11 +361,11 @@ header {
     }
 
     .text-content {
-        text-align: center; /* Center text on mobile */
+        text-align: center;
     }
 
     .get-started {
-        margin: 0 auto; /* Center button */
+        margin: 0 auto;
     }
 
     .image-content img {
@@ -370,7 +388,6 @@ header {
     }
 
     .arrow img {
-        display: none; /* Hide arrows on mobile */
+        display: none;
     }
 }
-
