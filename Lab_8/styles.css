@@ -42,6 +42,7 @@ header {
     list-style: none;
     display: flex;
     gap: 20px;
+    align-items: center; /* Aligns dropdown with other items */
 }
 
 .nav-links ul li a {
@@ -93,7 +94,6 @@ header {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 /* Hero Section */
 .hero {
@@ -208,14 +208,15 @@ header {
     border-radius: 10px;
 }
 
+/* Quote Overlay */
 .quote-overlay {
     position: absolute;
-    bottom: 30px;
-    left: 20px;
-    background-color: #6c63ff;
-    color: #fff;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f9f9f9; /* Match the template color */
+    color: #333;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0; /* Sharp corners */
     max-width: 80%;
     text-align: left;
     font-style: italic;
@@ -268,20 +269,14 @@ header {
 
 .performance-item h3 {
     font-size: 36px;
-    color: #6c63ff;
-    margin-bottom: 10px;
+    color: #000; /* Change to black */
+    margin-bottom: 5px;
 }
 
 .performance-item p {
     font-size: 16px;
     color: #333;
 }
-
-/* Fix Dropdown Misalignment */
-.nav-links ul {
-    align-items: center; /* Aligns dropdown with other items */
-}
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -296,6 +291,14 @@ header {
 
     .content {
         flex-direction: column;
+    }
+
+    .text-content {
+        text-align: center; /* Center text on mobile */
+    }
+
+    .get-started {
+        margin: 0 auto; /* Center button */
     }
 
     .image-content img {
