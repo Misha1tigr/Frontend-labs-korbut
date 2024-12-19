@@ -20,7 +20,6 @@ header {
     z-index: 1000;
 }
 
-/* Header Container */
 .container {
     display: flex;
     justify-content: space-between;
@@ -29,7 +28,6 @@ header {
     margin: 0 auto;
 }
 
-/* Logo */
 .logo a {
     font-size: 24px;
     font-weight: bold;
@@ -100,10 +98,8 @@ header {
     background-color: #fff;
     color: #1f6dff;
     text-decoration: none;
-    border: solid;
+    border: 1px solid #afafaf;
     border-radius: 30px;
-    border-width: 1px;
-    border-color: #afafaf;
 }
 
 .button:hover {
@@ -159,10 +155,10 @@ header {
 
 .grey-rectangle {
     position: absolute;
-    bottom: -70px;
+    bottom: -50px;
     left: 200px;
     width: 400px;
-    height:400px;
+    height: 400px;
     background-color: #d6d6d6;
     z-index: 1;
     border-radius: 1px;
@@ -209,7 +205,7 @@ header {
     max-width: 200px;
 }
 
-.quality-item img{
+.quality-item img {
     width: 50px;
 }
 
@@ -295,7 +291,7 @@ header {
 
 .icon img {
     margin-bottom: 15px;
-    width: 7cap;
+    width: 70px;
 }
 
 .step h3 {
@@ -317,7 +313,6 @@ header {
 /* Services Section */
 .services {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding: 50px 20px;
     background-color: #fafafa;
@@ -330,10 +325,8 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    flex-direction: row;
     flex-wrap: wrap;
 }
-
 
 .services .section-subtitle {
     font-size: 14px;
@@ -407,7 +400,6 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     scroll-snap-align: start;
     text-align: center;
-
 }
 
 .review img {
@@ -465,7 +457,7 @@ header {
     text-align: left;
 }
 
-.blog-card h4, a {
+.blog-card h4 a {
     font-size: 18px;
     color: #010b1d;
     margin-bottom: 10px;
@@ -482,7 +474,6 @@ header {
     font-size: 12px;
     color: #999;
 }
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -510,7 +501,6 @@ header {
     .grey-rectangle {
         display: none;
     }
-
 
     .get-started {
         margin: 0 auto;

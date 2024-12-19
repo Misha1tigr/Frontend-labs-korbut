@@ -8,3 +8,4 @@
 ## [Лабораторна 5](/Lab_5/index.html)
 ## [Лабораторна 6](/Lab_6/index.html)
 ## [Лабораторна 7](/Lab_7/my-app/build/index.html)
+## [Лабораторна 8](/Lab_8/index.html)
